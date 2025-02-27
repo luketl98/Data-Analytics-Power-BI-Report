@@ -60,7 +60,7 @@ ADDCOLUMNS(
     "Start of Month", DATE(YEAR([Date]), MONTH([Date]), 1),
     "Start of Week", [Date] - WEEKDAY([Date], 2)
 )
-
+```
 
 ### Establishing Relationships (Star Schema)
 
@@ -103,7 +103,7 @@ Profit YTD = TOTALYTD([Total Profit], Dates[Date])
 Revenue YTD = TOTALYTD([Total Revenue], Dates[Date])
 
 These measures enable essential business insights, such as profitability, order volume, and customer trends.
-
+```
 
 ### Creating the Hierarchies
 
@@ -136,4 +136,4 @@ SWITCH(
     "US", "United States",
     "DE", "Germany"
 )
-
+```
