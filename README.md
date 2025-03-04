@@ -82,7 +82,7 @@ A **Star Schema** was implemented to structure the data model. Relationships wer
 
 
 
-## Creating the Measures Table
+### Creating the Measures Table
 
 A **dedicated Measures Table** was created to store all **DAX measures**, keeping the data model structured and organized.
 
@@ -137,3 +137,58 @@ SWITCH(
     "DE", "Germany"
 )
 ```
+
+
+## Milestone 4: Set up the Report
+
+This short milestone involved simply setting up the 4 report pages and adding the background of a  navigation sidebar.
+
+### Create the report pages
+- Decided on a theme (colour scheme) here and then created the 4 pages, giving them each their title.
+- I then added a rectangle shape to cover a narrow strip on the left of the page, which will act as the shell of our navigation sidebar. Then replicated this across the 4 pages.
+
+
+## Milestone 5: Build the Customer Detail Page
+
+This milestone focused on creating a report page for customer-level analysis. The page includes various visuals to provide insights into customer behavior, revenue distribution, and trends.
+
+### Headline Card Visuals
+- Created two **card visuals**:
+  - **Unique Customers**: Displays the total distinct customers.
+  - **Revenue per Customer**: Calculated as `Total Revenue / Total Customers`.
+
+### Summary Charts
+- **Donut Chart (Customers by Country)**: Displays the number of unique customers per country.
+- **Donut Chart (Customers by Product Category)**: Shows customer distribution based on the product category they purchased.
+
+### Customer Trend Line Chart
+- **Line Chart (Total Customers Over Time)**:  
+  - **X-axis**: Uses the **Date Hierarchy** (drillable to the month level).  
+  - **Y-axis**: Displays `Total Customers`.  
+  - **Trend Line & Forecast**: A **10-period forecast** was applied with a **95% confidence interval**.
+
+### Top 20 Customers Table
+- Created a table to **rank the top 20 customers by revenue**.
+- Added **conditional formatting** (data bars) to the revenue column for visual emphasis.
+
+### Top Customer Insights Cards
+- Used **three card visuals** to display the **top customer by revenue**:
+  - **Name**
+  - **Total Orders**
+  - **Total Revenue**
+- A **DAX measure** was used to retrieve the top customer dynamically.
+
+### Date Slicer
+- **Between slicer** added, allowing users to filter the report by year.
+
+---
+
+### **Screenshots**
+Below are screenshots of the key visuals and setups:
+
+*(Insert screenshot links here once uploaded to GitHub)*
+
+---
+
+
+
