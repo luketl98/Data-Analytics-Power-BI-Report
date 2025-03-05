@@ -5,8 +5,11 @@ Power BI Data Analytics Report for an international retailer. This project invol
 ## Milestone 2: Importing and Transforming Data
 ### Data Sources and Import Methods
 **Orders Table:** Imported from an Azure SQL Database using the Database Credentials option.
+
 **Products Table:** Loaded from a CSV file via Power BI’s Get Data feature.
+
 **Stores Table:** Imported from an Azure Blob Storage container.
+
 **Customers Table:** Combined multiple CSV files using the Folder data connector.
 
 ### Transformations Performed
