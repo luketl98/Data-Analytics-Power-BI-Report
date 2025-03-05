@@ -188,6 +188,79 @@ Below are screenshots of the key visuals and setups:
 
 *(Insert screenshot links here once uploaded to GitHub)*
 
+## Milestone 6: Create an Executive Summary Page
+
+### Overview
+The **Executive Summary Page** provides a **high-level** overview of the company's performance, designed for **C-suite executives** to quickly assess key business metrics. The report helps executives track revenue, profit, and order performance over time and compare them against business targets.
+
+### **Key Objectives**
+- Provide a **quick summary** of business performance.
+- Allow **drill-down analysis** for revenue trends.
+- Show **KPIs for revenue, profit, and orders** vs. previous quarter targets.
+
+---
+
+### 📊 **Visuals & Components**
+The **Executive Summary Page** contains the following visuals:
+
+### **1️⃣ Card Visuals for Key Metrics**
+- Displays **Total Revenue, Total Profit, and Total Orders**.
+- Limited to **2 decimal places** (Revenue & Profit) and **1 decimal place** (Orders).
+
+### **2️⃣ Line Chart for Revenue Trends**
+- X-axis: **Date Hierarchy** (Start of Year, Start of Quarter, Start of Month).
+- Y-axis: **Total Revenue**.
+- Includes a **trend line** for visualization.
+
+### **3️⃣ Donut Charts for Revenue Breakdown**
+- **Revenue by Country** (United Kingdom, United States, Germany).
+- **Revenue by Store Type** (Super Store, Outlet, Local, etc.).
+
+### **4️⃣ Bar Chart for Orders by Product Category**
+- Initially copied from the **Customer Detail Page**.
+- Converted into a **Clustered Bar Chart**.
+- X-axis: **Total Orders**.
+- Y-axis: **Product Category**.
+- Custom **color formatting** applied.
+
+### **5️⃣ KPI Visuals for Quarterly Targets**
+- **KPIs Created for**:
+  - **Previous Quarter Revenue**
+  - **Previous Quarter Profit**
+  - **Previous Quarter Orders**
+  - **Target Revenue, Profit, and Orders** (5% growth target)
+- **KPI Formatting:**
+  - **Red** if the goal is not met.
+  - **Black** if the goal is met.
+  - Trend Axis set to **Start of Quarter**.
+  - Target values displayed.
+
+---
+
+### ⚙️ **DAX Measures Used**
+```DAX
+Previous Quarter Revenue = 
+CALCULATE(
+    [Total Revenue], 
+    DATEADD(Dates[Date], -1, QUARTER)
+)
+
+Previous Quarter Profit = 
+CALCULATE(
+    [Total Profit], 
+    DATEADD(Dates[Date], -1, QUARTER)
+)
+
+Previous Quarter Orders = 
+CALCULATE(
+    [Total Orders], 
+    DATEADD(Dates[Date], -1, QUARTER)
+)
+
+Target Revenue = [Previous Quarter Revenue] * 1.05
+Target Profit = [Previous Quarter Profit] * 1.05
+Target Orders = [Previous Quarter Orders] * 1.05
+
 ---
 
 
