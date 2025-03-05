@@ -203,27 +203,27 @@ The **Executive Summary Page** provides a **high-level** overview of the company
 ### 📊 **Visuals & Components**
 The **Executive Summary Page** contains the following visuals:
 
-### **1️⃣ Card Visuals for Key Metrics**
+### ** 1. Card Visuals for Key Metrics**
 - Displays **Total Revenue, Total Profit, and Total Orders**.
 - Limited to **2 decimal places** (Revenue & Profit) and **1 decimal place** (Orders).
 
-### **2️⃣ Line Chart for Revenue Trends**
+### ** 2. Line Chart for Revenue Trends**
 - X-axis: **Date Hierarchy** (Start of Year, Start of Quarter, Start of Month).
 - Y-axis: **Total Revenue**.
 - Includes a **trend line** for visualization.
 
-### **3️⃣ Donut Charts for Revenue Breakdown**
+### ** 3.  Donut Charts for Revenue Breakdown**
 - **Revenue by Country** (United Kingdom, United States, Germany).
 - **Revenue by Store Type** (Super Store, Outlet, Local, etc.).
 
-### **4️⃣ Bar Chart for Orders by Product Category**
+### ** 4. Bar Chart for Orders by Product Category**
 - Initially copied from the **Customer Detail Page**.
 - Converted into a **Clustered Bar Chart**.
 - X-axis: **Total Orders**.
 - Y-axis: **Product Category**.
 - Custom **color formatting** applied.
 
-### **5️⃣ KPI Visuals for Quarterly Targets**
+### ** 5. KPI Visuals for Quarterly Targets**
 - **KPIs Created for**:
   - **Previous Quarter Revenue**
   - **Previous Quarter Profit**
