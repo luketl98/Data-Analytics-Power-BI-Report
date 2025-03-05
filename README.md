@@ -1,5 +1,5 @@
 # Data-Analytics-Power-BI-Report
-Power BI Data Analytics Report for an international retailer. This project involves ETL, data modelling (star-schema), and creating a multi-page Power BI report with DAX-driven insights. Includes C-suite summaries, customer segmentation, product performance analysis, and a retail performance map.
+Power BI Data Analytics Report for an international retailer. This project involves **ETL**, **data modelling (star-schema)**, and creating a **multi-page Power BI report** with **DAX-driven insights**. Includes **C-suite summaries**, **customer segmentation**, **product performance analysis**, and a **retail performance map**.
 
 
 ## Milestone 2: Importing and Transforming Data
@@ -39,7 +39,7 @@ This milestone ensures a structured, well-prepared dataset ready for data modell
 This milestone focused on structuring the **Power BI Data Model**, ensuring it follows a **star schema** and supports time-based analysis.
 
 ### Creating the Date Table
-To enable time intelligence functions, time-based filtering and drill-downs in visualizations, a **Date Table** was created using the following **DAX formula**:
+To enable **time intelligence functions**, time-based filtering and drill-downs in visualizations, a **Date Table** was created using the following **DAX formula**:
 
 ```DAX
 DateTable = 
