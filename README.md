@@ -266,5 +266,25 @@ Target Orders = [Previous Quarter Orders] * 1.05
 
 ---
 
+## **Milestone 7 - Creation of the Product Detail Page**
+
+The purpose of this page if to provide an in-depth look at which products in the inventory are performing well, with the option to filter by product and region.
+
+### Product Detail Page Visuals  
+- **Gauge Charts** for **Revenue, Orders, and Profit**, tracking against a **10% quarterly target**.  
+- **Area Chart** showing **Revenue by Product Category over time**.  
+- **Top 10 Products Table**, displaying key metrics: **Total Revenue, Customers, Orders, and Profit per Order**.  
+- **Scatter Chart** visualizing **Profit per Item vs. Quantity Sold** to identify high-profit, high-selling products.  
+
+### Pop-Out Slicer Toolbar (Power BI Bookmarks & UI Design)  
+- Implemented a **hidden slicer panel** for **Product Category & Country filters** to **reduce page clutter**.  
+- Designed a **custom navigation button** to toggle the slicer panel using **Power BI bookmarks**.  
+- Configured **multi-select and "Select All" options** for better user interaction.  
+
+### Screenshots Included  
+✔ **Visual setups** & **final dashboard layout**.  
+✔ **Step-by-step slicer panel creation & bookmark setup**.  
+
+
 
 
