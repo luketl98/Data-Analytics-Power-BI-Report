@@ -266,25 +266,90 @@ Target Orders = [Previous Quarter Orders] * 1.05
 
 ---
 
-## **Milestone 7 - Creation of the Product Detail Page**
 
-The purpose of this page if to provide an in-depth look at which products in the inventory are performing well, with the option to filter by product and region.
+## Milestone 7: Creation of the Product Detail Page
 
-### Product Detail Page Visuals  
-- **Gauge Charts** for **Revenue, Orders, and Profit**, tracking against a **10% quarterly target**.  
-- **Area Chart** showing **Revenue by Product Category over time**.  
-- **Top 10 Products Table**, displaying key metrics: **Total Revenue, Customers, Orders, and Profit per Order**.  
-- **Scatter Chart** visualizing **Profit per Item vs. Quantity Sold** to identify high-profit, high-selling products.  
+The **Product Detail Page** provides an in-depth view of **product performance**, helping stakeholders identify top-performing products and analyze sales trends.
 
-### Pop-Out Slicer Toolbar (Power BI Bookmarks & UI Design)  
-- Implemented a **hidden slicer panel** for **Product Category & Country filters** to **reduce page clutter**.  
-- Designed a **custom navigation button** to toggle the slicer panel using **Power BI bookmarks**.  
-- Configured **multi-select and "Select All" options** for better user interaction.  
+### **Key Objectives**
+- Track **Revenue, Orders, and Profit** at the product level.
+- Identify **top-selling products** and **high-profit items**.
+- Enable **region and product-based filtering** for deeper insights.
 
-### Screenshots Included  
-✔ **Visual setups** & **final dashboard layout**.  
-✔ **Step-by-step slicer panel creation & bookmark setup**.  
+### **Visuals & Components**
+#### **1. Gauge Charts for Product KPIs**
+- **Revenue, Orders, and Profit** tracked against a **10% quarterly growth target**.
+- Uses **TotalQTD()** for current quarter values and **DATEADD()** for previous quarter comparisons.
+- Conditional formatting applied to highlight **performance gaps**.
+
+#### **2. Area Chart: Revenue by Product Category**
+- **X-axis**: `Dates[Start of Quarter]`
+- **Y-axis**: `Total Revenue`
+- **Legend**: `Products[Category]`
+- Used to **analyze revenue trends by category over time**.
+
+#### **3. Top 10 Products Table**
+- Displays the **top 10 products by revenue**.
+- Columns included:
+  - **Product Description**
+  - **Total Revenue**
+  - **Total Customers**
+  - **Total Orders**
+  - **Profit per Order**
+- `Profit per Order` calculated as:
+  ```DAX
+  Profit per Order = 
+  DIVIDE([Total Profit], [Total Orders], 0)
+
+#### **4. Scatter Chart: Profit per Item vs. Quantity Sold**
+- **X-axis**: `Products[Profit per Item]`
+- **Y-axis**: `Total Quantity Sold`
+- **Legend**: `Products[Category]`
+- Helps **identify high-selling and high-profit products** for potential marketing campaigns.
+
+### **Pop-Out Slicer Toolbar**
+- Implemented a **hidden slicer panel** to keep the report layout **clean**.
+- Created using **Power BI bookmarks**, allowing users to toggle the slicers via a **navigation button**.
+- Includes slicers for:
+  - **Product Category (multi-select enabled)**
+  - **Country (includes "Select All" option)**
+- Ensured that bookmarks **do not reset slicer selections**.
+
+### **Screenshots Included**
+- **Visual setup for the Product Detail Page.**
+- **Step-by-step slicer panel creation & bookmark setup.**
 
 
+## Milestone 8: Creation of the Stores Map Page
 
+The **Stores Map Page** allows regional managers to analyze **store profitability and sales trends**.
+
+### **Key Objectives**
+- Provide a **visual representation of store performance** using a **map visualization**.
+- Enable **drillthrough analysis** for individual store details.
+- Allow managers to **compare stores based on revenue, profit, and orders**.
+
+### **Visuals & Components**
+#### **1. Stores Map**
+- **Bubble map displaying store locations**.
+- **Bubble size represents Profit YTD**.
+- **Auto-Zoom enabled**, with unnecessary map controls disabled.
+- **Country Slicer (Tile Style)** placed above the map for easy filtering.
+
+#### **2. Stores Drillthrough Page**
+To allow deeper analysis, a **Drillthrough Page** was created for individual store performance.
+
+- **Top 5 Products Table**: Displays best-selling products per store.
+- **Column Chart**: Shows **Total Orders by Product Category**.
+- **Profit YTD Gauge**: Compares **current YTD profit** to a **20% year-over-year growth target**.
+- **Card Visual**: Displays the **selected store**.
+
+#### **3. Custom Tooltip for Store Profitability**
+- **Custom Tooltip page created** to show **Profit YTD vs. Target** when hovering over a store on the map.
+- **Copied the Profit YTD gauge** to the tooltip page and linked it to the **map visual**.
+
+### **Screenshots Included**
+- **Final Stores Map Page layout.**
+- **Drillthrough setup.**
+- **Tooltip configuration for map visual.**
 
