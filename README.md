@@ -353,3 +353,57 @@ To allow deeper analysis, a **Drillthrough Page** was created for individual sto
 - **Drillthrough setup.**
 - **Tooltip configuration for map visual.**
 
+## Milestone 9: Cross-Filtering and Navigation  
+
+This milestone focused on **refining cross-filtering interactions** and **implementing a navigation sidebar** to enhance report usability.  
+
+---
+
+### **Cross-Filtering Adjustments**  
+Power BI's default **cross-filtering and highlighting** were modified to ensure that only **relevant visuals interact with each other**, preventing unintended filtering.  
+
+#### **1. Executive Summary Page**
+- **Product Category bar chart** and **Top 10 Products table** **no longer filter card visuals or KPIs**.  
+
+#### **2. Customer Detail Page**
+- **Top 20 Customers table** no longer filters any other visuals.  
+- **Total Customers by Product Category Donut Chart** no longer filters other visuals.  
+- **Total Customers by Country Donut Chart** still filters **Total Customers by Product Category**.  
+- **Customers Donut Chart** no longer affects the **Customers Line Graph**.  
+
+#### **3. Product Detail Page**
+- **Orders vs. Profitability Scatter Chart** no longer affects other visuals.  
+- **Top 10 Products Table** no longer filters other visuals.  
+
+---
+
+### **Navigation Sidebar Implementation**  
+A **custom navigation sidebar** was created to allow seamless navigation between report pages.  
+
+#### **1. Button Setup**  
+- **Four blank buttons** were added to the sidebar on the **Executive Summary Page**.  
+- Each button was assigned a **custom icon** representing the corresponding report page.  
+- The **white icon version** was used for the default button state.  
+- The **cyan icon version** was used for the hover effect.  
+
+#### **2. Button Actions**  
+- **Page Navigation actions** were applied to each button:  
+
+| **Button**            | **Destination**           |
+|----------------------|--------------------------|
+| 📊 **Executive Summary** | `Executive Summary` (Home) |
+| 🏪 **Stores Map**        | `Stores Map` |
+| 📦 **Product Detail**    | `Product Detail` |
+| 👥 **Customer Detail**   | `Customer Detail` |
+
+- Buttons were **grouped together** and **copied across all report pages** for consistency.  
+
+---
+
+### **Screenshots Included**  
+- **Cross-filtering setup adjustments.**  
+- **Navigation sidebar button configurations.**  
+- **Final layout of the report with the sidebar.**  
+
+This milestone **optimises the user experience** by ensuring correct filtering behavior and enabling quick, intuitive navigation between report pages.
+
