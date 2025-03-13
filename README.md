@@ -35,7 +35,7 @@ The following transformations were made using **Power Query**.
   - Removed unnecessary columns
   - Renamed columns to match Power BI naming conventions
 
-[Power Query Example](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Screenshot%20of%20Power%20Query.png)
+![Power Query Example](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Screenshot%20of%20Power%20Query.png)
 
 ---
 
@@ -55,7 +55,7 @@ A **Star Schema** was implemented to optimise filtering and aggregation performa
 - `Orders[Order Date]` was set as the **active relationship** for accurate time-based reporting.
 - **One-to-many relationships** with single filter direction flow from dimension to fact tables.
 
-[Star Schema Data Model](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Star%20Schema%20Data%20Model.png)
+![Star Schema Data Model](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Star%20Schema%20Data%20Model.png)
 
 ### Creating the Date Table (DAX)
 A **custom Date Table** was created to enable time intelligence functions:
@@ -112,7 +112,9 @@ The Executive Summary Page provides a high-level overview of the company's perfo
 - **Bar Chart**: For Orders by Product Category
 - **Donut Charts**: For Revenue Breakdown by Country and Store Type
 
-[Executive Summary Page](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Executive%20Summary%20page.png)
+![Executive Summary Page](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Executive%20Summary%20page.png)
+
+![Executive Summary Page - 2](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Executive%20Summary%20page_2.png)
 
 ---
 
@@ -120,7 +122,10 @@ The Executive Summary Page provides a high-level overview of the company's perfo
 This page is focused on customer-level analysis. It includes various visuals to provide insights into customer behavior, revenue distribution, and trends.
 
 #### Key Objectives
-- 
+- Analyse customer demographics and purchasing behavior to identify high-value customer segments.
+- Track revenue distribution across different customer groups to uncover spending patterns.
+- Monitor customer trends over time to support targeted marketing strategies and retention efforts.
+
 
 #### Components & Visuals
 - **Card Visuals**: Unique Customers and Revenue per Customer
@@ -130,7 +135,9 @@ This page is focused on customer-level analysis. It includes various visuals to 
 - **Customer Insight Cards**: Three card visuals to display the top customer by revenue; Name, Total Orders, Total Revenue
 - **Date Slicer**: Allows users to filter the report by Date
 
-*Screenshot: Customer Detail Page*
+![Customer Detail Page](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Customer%20Detail%20page.png)
+
+![Customer Detail Page - 2](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Customer%20Detail%20page_2.png)
 
 ---
 
@@ -152,9 +159,11 @@ Allowing users to filter for:
 - Product Category (multi-select enabled)
 - Country (includes "Select All" option)
 
-*Screenshot: Product Performance Page*
-+ 
-*Screenshot: Product Performance Page - Showing filter/slicer*
+![Product Performance Page](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Product%20Detail%20page.png)
+
+![Product Performance Page - 2](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Product%20Detail%20page_2.png)
+
+![Product Performance Page - Showing filter/slicer](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Product%20Detail%20page%20Slicer%20open.png)
 
 ---
 
@@ -171,9 +180,11 @@ The Stores Map Page allows regional managers to analyse store profitability and 
 - **Drillthrough**: Store-level analysis
 - **Custom Tooltip**: Profit YTD vs. Target
 
-*Screenshot: Stores Map page* Showing custom tooltip
-+
-*Screenshot: Drillthrough page
+![Stores Map page](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Stores%20Map%20page.png)
+
+![Stores Map page - Showing custom tooltip](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Stores%20Map%20page%20and%20tooltip.png)
+
+![Drillthrough page](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Drillthrough%20page.png)
 
 ---
 
@@ -186,8 +197,6 @@ The Stores Map Page allows regional managers to analyse store profitability and 
 
 **Cross-filtering optimised** to prevent unintended interactions:
 Power BI's default cross-filtering and highlighting were modified to ensure that only relevant visuals interact with each other, preventing unintended filtering.
-
-*Screenshot: Navigation Sidebar*
 
 ---
 
