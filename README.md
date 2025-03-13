@@ -35,7 +35,7 @@ The following transformations were made using **Power Query**.
   - Removed unnecessary columns
   - Renamed columns to match Power BI naming conventions
 
-*Screenshot: Power Query* 
+[Power Query Example](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Screenshot%20of%20Power%20Query.png)
 
 ---
 
@@ -55,7 +55,7 @@ A **Star Schema** was implemented to optimise filtering and aggregation performa
 - `Orders[Order Date]` was set as the **active relationship** for accurate time-based reporting.
 - **One-to-many relationships** with single filter direction flow from dimension to fact tables.
 
-*Screenshot: Star Schema Data Model*
+[Star Schema Data Model](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Star%20Schema%20Data%20Model.png)
 
 ### Creating the Date Table (DAX)
 A **custom Date Table** was created to enable time intelligence functions:
@@ -112,7 +112,7 @@ The Executive Summary Page provides a high-level overview of the company's perfo
 - **Bar Chart**: For Orders by Product Category
 - **Donut Charts**: For Revenue Breakdown by Country and Store Type
 
-*Screenshot: Executive Summary Page*
+[Executive Summary Page](https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Executive%20Summary%20page.png)
 
 ---
 
