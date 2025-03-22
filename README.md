@@ -1,6 +1,7 @@
 # **Power BI Data Analytics Report**
 
 ## Table of Contents
+- [Screenshots](#screenshots)
 - [Project Description](#project-description)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -8,6 +9,7 @@
 - [License](#license)
 
 ---
+## **Screenshots**
 <p align="center">
   <img src="https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Executive%20Summary%20page.png" width="45%" />
   <img src="https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Customer%20Detail%20page.png" width="45%" />
@@ -20,7 +22,7 @@
 
 ---
 ## **Project Description**
-This project is a **Power BI Data Analytics Report** for an international retailer. It involves **ETL (Extract, Transform, Load) processes**, **data modelling (star schema)**, and the creation of a **multi-page interactive Power BI report** with **DAX-driven insights**.
+This project is a **Power BI Data Analytics Report** for an international retailer. It involves **ETL (Extract, Transform, Load) processes**, **data modelling (star schema)**, and the creation of a **multi-page interactive Power BI report** including **drillthroughs** and **custom tooltips** with **DAX-driven insights**.
 
 ### **Project Goals**
 - Provide a **C-suite summary** for quick decision-making.
