@@ -9,10 +9,10 @@
 
 ---
 
-## ** Project Description**
+## **Project Description**
 This project is a **Power BI Data Analytics Report** for an international retailer. It involves **ETL (Extract, Transform, Load) processes**, **data modelling (star schema)**, and the creation of a **multi-page interactive Power BI report** with **DAX-driven insights**.
 
-### ** Project Goals**
+### **Project Goals**
 - Provide a **C-suite summary** for quick decision-making.
 - Analyse **customer segmentation** and revenue distribution.
 - Track **product performance** across different categories.
@@ -20,7 +20,7 @@ This project is a **Power BI Data Analytics Report** for an international retail
 
 ---
 
-## ** Installation**
+## **Installation**
 ### **Prerequisites**
 - Install **Power BI Desktop** from [Microsoft](https://powerbi.microsoft.com/desktop/).
 - Install **Git** (if cloning the repo): [Git Download](https://git-scm.com/downloads)
@@ -59,22 +59,23 @@ git clone https://github.com/luketl98/Data-Analytics-Power-BI-Report.git
 │   ├── Customer_Detail_Page.png
 │   ├── Executive_Summary_Page.png
 │   ├── Product_Detail_Page.png
+│   ├── ... (more screenshots)
 │-- 📁 navigation_bar_images/        # Icons for navigation bar
 │   ├── dashboard.png
 │   ├── customer.png
-│   ├── product.png
+│   ├── ... (other navigation icons)
 │-- 📁 SQL/                          # SQL Queries for additional analysis
 │   ├── question_1.sql
 │   ├── question_1.csv
-│   ├── ...
+│   ├── ... (more queries)
 ```
 
 ---
 
-## ** License**
+## **License**
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## ** Additional Documentation**
+## **Additional Documentation**
 For a deeper dive into the **data model, visuals, and DAX calculations**, see the **[Wiki](https://github.com/luketl98/Data-Analytics-Power-BI-Report/wiki)**.
