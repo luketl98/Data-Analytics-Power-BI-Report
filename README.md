@@ -8,7 +8,17 @@
 - [License](#license)
 
 ---
+<p align="center">
+  <img src="https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Executive%20Summary%20page.png" width="45%" />
+  <img src="https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Customer%20Detail%20page.png" width="45%" />
+</p>
 
+<p align="center">
+  <img src="https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Product%20Detail%20page.png" width="45%" />
+  <img src="https://github.com/luketl98/Data-Analytics-Power-BI-Report/blob/main/Screenshots/Stores%20Map%20page.png" width="45%" />
+</p>
+
+---
 ## **Project Description**
 This project is a **Power BI Data Analytics Report** for an international retailer. It involves **ETL (Extract, Transform, Load) processes**, **data modelling (star schema)**, and the creation of a **multi-page interactive Power BI report** with **DAX-driven insights**.
 
