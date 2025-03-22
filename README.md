@@ -7,6 +7,7 @@
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [License](#license)
+- [Additional Documentation](#additional-documentation)
 
 ---
 ## **Screenshots**
