@@ -60,7 +60,7 @@ git clone https://github.com/luketl98/Data-Analytics-Power-BI-Report.git
 
 ---
 
-## **📂 File Structure**
+## **File Structure**
 ```plaintext
 📁 Data-Analytics-Power-BI-Report/
 │-- 📄 README.md                   # Project documentation
